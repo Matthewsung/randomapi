@@ -113,7 +113,6 @@
   margin: 110px 0 0;
   padding: 243px 80px 241px;
   background-color: #ffffff;
-  position: relative;
 }
 .Rectangle {
   width: 1680px;
@@ -123,9 +122,6 @@
   flex-grow: 0;
   object-fit: contain;
   background-color: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  left: 0;
-  top: 0;
 }
 
 .Sed-ut-perspiciatis-unde-omnis {
