@@ -1,8 +1,8 @@
 const Snap = () => {
 
   return(
-    <div className="Snap-photos-and-share-like-never-before">
-      Snap photos and share like never before
+    <div className="big_title">
+      Snap photos and share like <br /> never before
     </div>
   )
 }

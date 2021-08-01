@@ -28,7 +28,7 @@ const Section_1 = () => {
       setOption(options.sort(()=>Math.random() -0.5))
   },[])
   return(
-    <div className="Section-1">
+    <div className="Section_1">
       {option.map((val,i) => <Group key = {val.id} options ={val} index={i}/> )}
     </div>
   )

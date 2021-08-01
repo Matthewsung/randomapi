@@ -1,21 +1,24 @@
+/*.wrap{
+   display: flex; 
+}*/
 .Screen {
   width: 1680px;
   height: 1536px;
+  /* flex-grow: 0; */
+  margin: 0 auto;
   padding: 120px 0 0;
   background-color: #ffffff;
+  border: 1px solid #bcb5b9;
 }
 
 
 /* Snap */
-.Snap-photos-and-share-like-never-before {
+.big_title {
   width: 750px;
   height: 144px;
   margin: 0 277px 70px 80px;
-  font-family: Exo2;
+  font-family: 'Exo 2';
   font-size: 48px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.5;
   letter-spacing: -0.72px;
   text-align: left;
@@ -24,7 +27,7 @@
 
 
 /* Section-1 */
-.Section-1 {
+.Section_1 {
   width: 1520px;
   height: 352px;
   display: flex;
@@ -40,17 +43,17 @@
   height: 352px;
   flex-grow: 0;
 }
-.Group-2 {
+.Group_2 {
   width: 494px;
   
 }
-.Ellipse {
+.profile {
   width: 108px;
   height: 108px;
   flex-grow: 0;
   margin: 0 385px 40px 0;
 }
-.Sed-ut-perspiciatis {
+.sm_title {
   width: 493px;
   height: 36px;
   flex-grow: 0;
@@ -58,73 +61,76 @@
   font-family: Montserrat;
   font-size: 24px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.5;
   letter-spacing: -0.36px;
   text-align: left;
   color: #000000;
 }
-.Sed-ut-perspiciatis-2 {
+.sm_title_2 {
   width: 494px;
   
 }
-.Nemo-enim-ipsam-voluptatem-quia-voluptas-sit-aspernatur-aut-odit-aut-fugit-sed-quia-consequuntur-ma {
+.g_desc {
   width: 493px;
   height: 90px;
   flex-grow: 0;
   margin: 24px 0;
   font-family: Montserrat;
   font-size: 18px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.67;
   letter-spacing: -0.27px;
   text-align: left;
   color: rgba(0, 0, 0, 0.8);
 }
-.Amet-consectetur-adipiscing-elit-sed-do-eiusmod-tempor-incididunt-ut-labore-et-dolore-magna-aliqua-2 {
+.g_desc_2 {
   width: 494px;
 }
-.Learn-more {
+.Learn_more {
   width: 493px;
   height: 30px;
   flex-grow: 0;
   margin: 24px 0 0;
-  font-family: Exo2;
+  font-family: 'Exo 2';
   font-size: 18px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.67;
   letter-spacing: -0.27px;
   text-align: left;
   color: #18a0fb;
 }
-.Learn-more-2 {
+.Learn_more_2 {
   width: 494px;
 }
 
 /*  Section-2  */
-.Section-2 {
+.Section_2 {
   width: 1680px;
   height: 740px;
   margin: 110px 0 0;
-  padding: 243px 80px 241px;
   background-color: #ffffff;
+  position: relative;
 }
-.Rectangle {
+.backImg {
+  width: 1680px;
+  height: 740px;
+  margin: 110px 0 0;
+  /* padding: 243px 80px 241px; */
+  object-fit: contain;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+}
+.backImg_box{
   width: 1680px;
   height: 740px;
   margin: 110px 0 0;
   padding: 243px 80px 241px;
-  flex-grow: 0;
   object-fit: contain;
   background-color: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
-
-.Sed-ut-perspiciatis-unde-omnis {
+.backImg_title {
   width: 1520px;
   height: 36px;
   flex-grow: 0;
@@ -132,45 +138,37 @@
   font-family: Montserrat;
   font-size: 24px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.5;
   letter-spacing: -0.36px;
   text-align: center;
   color: #ffffff;
 }
-.There-are-many-variations-of-passages-of-Lorem-Ipsum-available-but-the-majority-have-suffered-alter {
+.backImg_desc {
   width: 1520px;
   height: 89px;
   flex-grow: 0;
   margin: 23px 0 32px;
   font-family: Montserrat;
   font-size: 18px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.67;
   letter-spacing: -0.27px;
   text-align: center;
   color: rgba(255, 255, 255, 0.8);
 }
-.Rectangle-2 {
+.backImg_line {
   width: 1520px;
   height: 1px;
   flex-grow: 0;
   margin: 32px 0;
   background-color: rgba(255, 255, 255, 0.5);
 }
-.Sed-ut-perspiciatis-unde-omnis-iste-natus-error-sit-voluptatem-accusantium-doloremque-laudantium-to {
+.backImg_descBottom {
   width: 1518px;
   height: 43px;
   flex-grow: 0;
   margin: 32px 0 0 2px;
   font-family: Montserrat;
   font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.57;
   letter-spacing: -0.21px;
   text-align: center;
