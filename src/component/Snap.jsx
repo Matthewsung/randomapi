@@ -1,7 +1,8 @@
+import styles from './Snap.module.css'
 const Snap = () => {
 
   return(
-    <div className="big_title">
+    <div className={styles.big_title}>
       Snap photos and share like <br /> never before
     </div>
   )

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import Group from './Group'
+import styles from './Section1.module.css'
 const options = [
   {
     id:1,
@@ -21,16 +22,16 @@ const options = [
   },
 
 ]
-const Section_1 = () => {
+const Section1 = () => {
   //options 불러와서 랜덤으로 저장
   const [option, setOption] = useState([])
   useEffect(()=>{
       setOption(options.sort(()=>Math.random() -0.5))
   },[])
   return(
-    <div className="Section_1">
+    <div className={styles.Section_1}>
       {option.map((val,i) => <Group key = {val.id} options ={val} index={i}/> )}
     </div>
   )
 }
-export default Section_1
+export default Section1

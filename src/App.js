@@ -1,14 +1,14 @@
 import './App.css';
 import Snap from './component/Snap'
-import Section_1 from './component/Section_1'
-import Section_2 from './component/Section_2'
+import Section1 from './component/Section1'
+import Section2 from './component/Section2'
 function App() {
   return (
     <div className="wrap">
       <div className="Screen">
         <Snap />
-        <Section_1 />
-        <Section_2 />
+        <Section1 />
+        <Section2 />
       </div>
     </div>
   );

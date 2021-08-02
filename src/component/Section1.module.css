@@ -1,0 +1,11 @@
+.Section_1 {
+  width: 1520px;
+  height: 352px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+  margin: 70px 80px 110px;
+  padding: 0;
+}
