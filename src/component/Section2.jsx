@@ -3,33 +3,34 @@ import axios from 'axios'
 import styles from './Section2.module.css'
 const Section2 = () => {
   const [getImg, setGetImg] = useState({url:'',alt:''})
+  const accessKey = process.env.REACT_APP_accessKey
+  const secretKey = process.env.REACT_APP_secretKey
+
   const chkImg = (newUrl,newAlt) => {
     if(localStorage.getItem("url")){
-      setGetImg({url:localStorage.getItem("url"), alt:localStorage.getItem("alt")})
+      setGetImg({url:localStorage.getItem("url"), alt:localStorage.getItem("alt") })
     }
     else{
       setGetImg(
         {
           url:newUrl,
-          alt:newAlt
+          alt:newAlt,
+          
         }
       )   
-      window.localStorage.setItem('url',newUrl)
-      window.localStorage.setItem('alt',newAlt)
+      window.localStorage.setItem('url',JSON.stringify(newUrl))
+      window.localStorage.setItem('alt',JSON.stringify(newAlt))
     }
   }
   useEffect(() => {
-    const LoadImg = axios.get("https://api.unsplash.com/photos/random?client_id=RfZSbn_rdvEPrnhslq8HRwmCwyayZg3DBo_LDcXXaTM")
+    const LoadImg = axios.get(`https://api.unsplash.com/photos/random?client_id=${accessKey}&client_secret=${secretKey}`)
     LoadImg.then((res)=>{
       chkImg(res.data.urls.full,res.data.alt_description)
-      
     }).catch(Error=> console.log(Error))
-
   }, [])
   return (
     <div className={styles.Section_2}>
-      <img src={getImg.url} className={styles.backImg} alt={getImg.alt} />
-      {/* <img src="img/rectangle.png" srcSet="img/rectangle@2x.png 2x,img/rectangle@3x.png 3x" className={styles.backImg}/> */}
+      <img src = {getImg.url} className={styles.backImg} alt={getImg.alt} />
       <div className={styles.backImg_box}>
         <div className={styles.backImg_title}>Sed ut perspiciatis unde omnis</div>
         <div className={styles.backImg_desc}>
