@@ -15,7 +15,6 @@ const Section2 = () => {
         {
           url:newUrl,
           alt:newAlt,
-          
         }
       )   
       window.localStorage.setItem('url',JSON.stringify(newUrl))
@@ -29,8 +28,7 @@ const Section2 = () => {
     }).catch(Error=> console.log(Error))
   }, [])
   return (
-    <div className={styles.Section_2}>
-      <img src = {getImg.url} className={styles.backImg} alt={getImg.alt} />
+    <div className={styles.Section_2} style={{background:`url(${getImg.url}) no-repeat center / cover`}}>
       <div className={styles.backImg_box}>
         <div className={styles.backImg_title}>Sed ut perspiciatis unde omnis</div>
         <div className={styles.backImg_desc}>

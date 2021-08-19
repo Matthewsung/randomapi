@@ -5,11 +5,6 @@
   background-color: #ffffff;
   position: relative;
 }
-.backImg {
-  width: 1680px;
-  height: 740px;
-  object-fit: contain;
-}
 .backImg_box{
   width: 1680px;
   height: 740px;
