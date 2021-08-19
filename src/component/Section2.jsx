@@ -38,7 +38,7 @@ const Section2 = () => {
         </div>
         <div className={styles.backImg_line}></div>
         <div className={styles.backImg_descBottom}>
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates distinctio natus inventore maxime sunt accusantium eveniet consequuntur eos et soluta ullam blanditiis a earum odit, tempora, nisi, eaque sit sequi.
         </div>
       </div>
     </div>

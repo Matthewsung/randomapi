@@ -8,15 +8,11 @@
 .backImg {
   width: 1680px;
   height: 740px;
-  /* margin: 110px 0 0; */
-  /* padding: 243px 80px 241px; */
   object-fit: contain;
-  /* background-color: rgba(0, 0, 0, 0.5); */
 }
 .backImg_box{
   width: 1680px;
   height: 740px;
-  /* margin: 110px 0 0; */
   padding: 243px 80px 241px;
   object-fit: contain;
   background-color: rgba(0, 0, 0, 0.5);

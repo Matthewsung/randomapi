@@ -4,23 +4,22 @@ import styles from './Section1.module.css'
 const options = [
   {
     id:1,
-    url:"img/Ellipse.png",
-    title:"Sed ut perspiciatis",
-    detail:"Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.",
+    url:"img/kang1.png",
+    title:"강하늘s",
+    detail:"2020년 제56회 백상예술대상 TV부문 남자 최우수연기상 (동백꽃 필 무렵)",
   },
   {
     id:2,
-    url:"img/Ellipse_2.png",
-    title:"Lorem ipsum dolor",
-    detail:"Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.",
+    url:"img/han.png",
+    title:"한효주",
+    detail:"2016년 MBC 연기대상 미니시리즈부문 여자 최우수연기상",
   },
   {
     id:3,
-    url:"img/Ellipse_3.png",
-    title:"Nemo enim ipsam",
-    detail:"Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor.",
+    url:"img/gwan.png",
+    title:"권상우",
+    detail:"2011년 제6회 아시아모델상시상식 아시아스타상",
   },
-
 ]
 const Section1 = () => {
   //options 불러와서 랜덤으로 저장
